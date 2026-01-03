@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressive Full Stack Frontend Project</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>
+<body>
+
+<header>
+  <h1>MyPortfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#todo">To-Do</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hello, I'm <span>A Creative Developer</span></h2>
+  <p>I build modern, responsive, and interactive web applications using HTML, CSS & JavaScript.</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate frontend developer skilled in building visually impressive and fully functional websites.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Portfolio Website</div>
+    <div class="card">To-Do App with Local Storage</div>
+    <div class="card">Product Filter & Sorting System</div>
+  </div>
+</section>
+
+<section id="todo">
+  <h2>To-Do List </h2>
+  <input id="taskInput" placeholder="Enter task" />
+  <button onclick="addTask()">Add Task</button>
+  <ul id="taskList"></ul>
+</section>
+
+<section id="products">
+  <h2>Product Listing</h2>
+  <select id="filter" onchange="displayProducts()">
+    <option value="all">All Categories</option>
+    <option value="tech">Tech</option>
+    <option value="fashion">Fashion</option>
+  </select>
+  <select id="sort" onchange="displayProducts()">
+    <option value="rating">Sort by Rating</option>
+    <option value="price">Sort by Price</option>
+  </select>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <input id="contactName" placeholder="Your Name" />
+  <input id="contactEmail" placeholder="Your Email" />
+  <textarea id="contactMessage" placeholder="Your Message"></textarea>
+  <button onclick="sendMessage()">Send Message</button>
+  <p id="contactStatus"></p>
+</section>
+
+<footer>
+  <p>© 2025 | Fully Responsive & Interactive Project</p>
+</footer>
+
+<script src="task4.js"></script>
+</body>
+</html>
